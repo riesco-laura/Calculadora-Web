@@ -1,5 +1,5 @@
 # CALCULADORA WEB
-Una calculadora moderna y minimalista desarrollada con un enfoque en la simplicidad, el diseño atractivo y el código bien estructurado. Totalmente responsiva, fácil de usar y optimizada para una experiencia fluida. 
+Una calculadora moderna y minimalista desarrollada con un enfoque en **la simplicidad, el diseño atractivo y el código bien estructurado.** Totalmente responsiva, fácil de usar y optimizada para una experiencia fluida. 
 
 
 ## 🚀 **CARACTERÍSTICAS PRINCIPALES
