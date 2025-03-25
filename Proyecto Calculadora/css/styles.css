@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* || RESET || */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /* TIPOGRAFÍAS */
+    --ff: Montserrat, sans-serif;
+    --ff-color: #333;
+    --ff-color-light: #999;
+    --ff-color-white: #efefef;
+    --fs: 2rem;
+}
+
+
+/* || ESTILOS GENERALES || */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    font-family: var(--ff);
+    font-size:var(--fs);
+    color: var(--ff-color);
+
+    background-image: url(../images/fondo.jpg);
+}
+
+main{
+    text-align: center;
+    margin: 3rem;
+    padding: 3rem;
+    border-radius: 50px;
+    box-shadow: 12px 12px 16px black;
+    background-color: var(--ff-color-white);
+}
+
+
+/* || ESTILOS DE CLASES || */
+
+.pantalla{
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 16px var(--ff-color-light);
+    text-align: end;
+}
+
+.teclado {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;  
+}
+
+.tecla{
+    background-color: var(--ff-color);
+    color: var(--ff-color-white);
+    padding: 1rem;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 16px #454545;
+}
+
+.tecla:is(:hover, :focus){
+    box-shadow: inset 8px 8px 16px #151515;
+}
+
+.tecla:active{
+    transform: scale(0.95);
+}
+
+.enter{
+    grid-column: 4;
+    grid-row: span 4;
+    display: flex;
+    align-items: center;
+}
+
+.borrar{
+    background-color: #a52a2a;
+    box-shadow: inset 8px 8px 16px #d23f3f;
+}
+
+.borrar:is(:hover, :focus){
+    box-shadow: inset 8px 8px 16px #7b1e1e;
+}
+
+
+/* || ANIMACIONES || */
+
+.pipelin {
+    animation: parpadeo 1s ease-in-out infinite;
+}
+
+@keyframes parpadeo {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
